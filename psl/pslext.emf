@@ -1,0 +1,8 @@
+@namespace(uri="pslext")
+package pslext;
+
+import "platform:/plugin/psl/psl.ecore";
+
+class TaskExt extends psl.Task {
+	
+}

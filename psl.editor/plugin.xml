@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated psl -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="psl.presentation.PslModelWizardID"
+            name="%_UI_PslModelWizard_label"
+            class="psl.presentation.PslModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/PslModelFile.gif">
+         <description>%_UI_PslModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated psl -->
+      <editor
+            id="psl.presentation.PslEditorID"
+            name="%_UI_PslEditor_label"
+            icon="icons/full/obj16/PslModelFile.gif"
+            extensions="psl"
+            class="psl.presentation.PslEditor"
+            contributorClass="psl.presentation.PslActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated pslext -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="pslext.presentation.PslextModelWizardID"
+            name="%_UI_PslextModelWizard_label"
+            class="pslext.presentation.PslextModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/PslextModelFile.gif">
+         <description>%_UI_PslextModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated pslext -->
+      <editor
+            id="pslext.presentation.PslextEditorID"
+            name="%_UI_PslextEditor_label"
+            icon="icons/full/obj16/PslextModelFile.gif"
+            extensions="pslext"
+            class="pslext.presentation.PslextEditor"
+            contributorClass="pslext.presentation.PslextActionBarContributor">
+      </editor>
+   </extension>
+</plugin>

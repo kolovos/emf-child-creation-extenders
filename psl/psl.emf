@@ -1,0 +1,11 @@
+@namespace(uri="psl")
+package psl;
+
+class Project {
+	attr String name;
+	val Task[*] tasks;
+}
+
+class Task {
+	attr String name;
+}
