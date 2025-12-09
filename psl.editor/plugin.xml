@@ -61,4 +61,31 @@
             contributorClass="pslext.presentation.PslextActionBarContributor">
       </editor>
    </extension>
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated pslext2 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="pslext2.presentation.Pslext2ModelWizardID"
+            name="%_UI_Pslext2ModelWizard_label"
+            class="pslext2.presentation.Pslext2ModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Pslext2ModelFile.gif">
+         <description>%_UI_Pslext2ModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated pslext2 -->
+      <editor
+            id="pslext2.presentation.Pslext2EditorID"
+            name="%_UI_Pslext2Editor_label"
+            icon="icons/full/obj16/Pslext2ModelFile.gif"
+            extensions="pslext2"
+            class="pslext2.presentation.Pslext2Editor"
+            contributorClass="pslext2.presentation.Pslext2ActionBarContributor">
+      </editor>
+   </extension>
 </plugin>

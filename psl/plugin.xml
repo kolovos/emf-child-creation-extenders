@@ -22,4 +22,12 @@
             genModel="pslext.genmodel"/>
    </extension>
 
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated pslext2 -->
+      <package
+            uri="pslext2"
+            class="pslext2.Pslext2Package"
+            genModel="pslext2.genmodel"/>
+   </extension>
+
 </plugin>

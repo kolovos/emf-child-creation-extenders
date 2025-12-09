@@ -13,7 +13,10 @@ Export-Package: psl,
  psl.util,
  pslext,
  pslext.impl,
- pslext.util
+ pslext.util,
+ pslext2,
+ pslext2.impl,
+ pslext2.util
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  psl;visibility:=reexport

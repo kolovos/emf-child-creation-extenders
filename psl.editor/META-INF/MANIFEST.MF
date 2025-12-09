@@ -5,12 +5,13 @@ Bundle-SymbolicName: psl.editor;singleton:=true
 Automatic-Module-Name: psl.editor
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
-Bundle-Activator: psl.presentation.PslEditorPlugin$Implementation
+Bundle-Activator: pslext.presentation.PslextEditorPlugin$Implementation
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-17
 Export-Package: psl.presentation,
- pslext.presentation
+ pslext.presentation,
+ pslext2.presentation
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.core.resources;visibility:=reexport,
  psl.edit;visibility:=reexport,
